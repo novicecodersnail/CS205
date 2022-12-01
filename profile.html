@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>OtterFodder</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+
+
+
+  
+
+  <!-- Favicons -->
+  <link href=" {{ url_for('static', filename='static/assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='static/assets/img/apple-touch-icon.png') }}  " rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CRaleway:300,300i,400,400i,500,500i,600,600i,700,700i%7CSatisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='static/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='static/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='static/assets/vendor/boxicons/css/boxicons.min.css') }} " rel="stylesheet">
+  <link href="{{ url_for('static', filename='static/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='static/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='static/assets/css/profile.css') }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Name: OtterFodder
+  * Author: Jose Cabrera, Kevin
+  * License: None
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+     
+        
+       
+        <li><a class="nav-link scrollto" href="#chats">Chats</a></li>
+
+        <li class="dropdown"><a href="#"><span>Settings</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{{ url_for('logout') }}">Log out </a></li>
+            <li><a href="{{ url_for('delete2') }}">Delete Account</a></li>
+           
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="{{ url_for('shell_stack') }}">SHELL STACK</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Profile</h1>
+      <h2>-- Customization--</h2>
+      <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= MY Profile  Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <span>My Profile </span>
+          <h2>My Profile </h2>
+        </div>
+
+        <div class="row">
+      
+          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-lg-8 d-flex flex-column align-items-stretch">
+            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong><h2>Username:</h2></strong> <span><h4>{{posts.name}} </h4></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong><h2>Major:</h2></strong> <span><h4>{{posts.major}}</h4></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong><h2>Height:</h2></strong> <span><h4>{{posts.height}}</h4></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong><h2>Weight:</h2></strong> <span><h4>{{posts.weight}}</h4></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong><h2>Gender:</h2></strong> <span><h4>{{posts.gender}}</h4></span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>Gender:</strong> <span>{{posts.gender}}</span></li> -->
+                    <li><i class="bi bi-chevron-right"></i> <strong><h2>Bio:</h2></strong> 
+                    <span>
+                      <h4>{{posts.bio}}</h4>
+
+                    </span></li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End .content-->
+            
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End My Profile Section -->
+
+
+
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Pricing</span>
+          <h2>Pricing</h2>
+          <p>Pick your selection. If you dont want to go pro, no worries, but you otter act quick or someone might steal the person of your dreams.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Limited Swipes</li>
+                <li>Limited Filters</li>
+                <li>Average Show Time</li>
+                <li class="na">Shell Boost</li>
+                <li class="na">Unlimeted Swipes</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="box featured">
+              <h3>Shell-Tastic</h3>
+              <h4><sup>$</sup>5<span> / month</span></h4>
+              <ul>
+                <li>Unlimited Swipes</li>
+                <li>Unlimited Filters</li>
+                <li>Peak Show Time</li>
+                <li>Shell Boost</li>
+        
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>OtterFodder</h3>
+      <p><i>"If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward."</i> </p>
+      <div class="social-links">
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>OtterFodder</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+
+  
+  <script src="{{ url_for('static', filename='static/assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='static/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='static/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='static/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='static/assets/vendor/waypoints/noframework.waypoints.js') }}  "></script>
+  <script src="{{ url_for('static', filename='static/assets/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='static/assets/js/main.js') }}"></script>
+
+</body>
+
+</html>

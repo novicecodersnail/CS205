@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="{{ url_for('static', filename='static/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='static/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+        <!-- Template Main CSS File -->
+        <link href="{{ url_for('static', filename='static/assets/css/forms.css') }}" rel="stylesheet">
+        <title>Register</title>
+    </head>
+<body>
+    <div class="reg">
+        <div class="col-lg-6">
+        <h1 class="register-text">Register Page</h1>
+        <form class="submission-form" method="POST" action="">
+            {{ form.hidden_tag() }}
+            {{ form.username }}
+            {{ form.password }}
+            {{ form.height }}
+            {{ form.major }}
+            {{ form.weight }}
+            {{ form.name }}
+            {{ form.gender }}
+            {{ form.bio }}
+            {{ form.submit }}
+        </form>
+        </div>
+        <a class="option-text"  href="{{url_for('login')}}"> Have an account? Login  </a>
+    </div>
+</body>
+</html>

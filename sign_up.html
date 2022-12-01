@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>OtterFodder</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+  
+
+  <!-- Favicons -->
+  <link href=" {{ url_for('static', filename='static/assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='static/assets/img/apple-touch-icon.png') }}  " rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='static/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='static/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='static/assets/vendor/boxicons/css/boxicons.min.css') }} " rel="stylesheet">
+  <link href="{{ url_for('static', filename='static/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='static/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='static/assets/css/style.css') }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Name: OtterFodder
+  * Author: Jose Cabrera, Kevin Olasava, Bohnny Vonan
+  * License: None
+  ======================================================== -->
+</head>
+<form method="POST">
+    <body>
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+      
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+              <li><a class="nav-link scrollto" href="#explore">Explore</a></li>
+             
+              <!-- <li><a href="http://127.0.0.1:5000/profile/" href="#profile">Profile</a></li> -->
+      
+              <li class="dropdown"><a href="#profile"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="http://127.0.0.1:5000/profile/">Login</a></li>
+      
+                  <li><a href="http://127.0.0.1:5000/sign-up">Sign up</a></li>
+                 
+                </ul>
+              </li>
+      
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+      
+        </header><!-- End Header -->
+        <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>OtterFodder</h1>
+      <h2>by otters for otters </h2>
+      <!-- <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a> -->
+    </div>
+  </section><!-- End Hero -->
+</head>
+    <form method="POST">
+      <h3 align="center">Sign Up</h3>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          name="firstName"
+          placeholder="Enter first name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password1"
+          name="password1"
+          placeholder="Enter password"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password2">Password (Confirm)</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password2"
+          name="password2"
+          placeholder="Confirm password"
+        />
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+<!-- ======= Contact Us Section ======= -->
+<section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Contact Us</span>
+        <h2>Contact Us</h2>
+        <p>Having trouble? Contact us for help.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="info-box">
+                <i class="bx bx-share-alt"></i>
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+                  <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Me</h3>
+                <p>contact@example.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Me</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Us Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container">
+    <h3>OtterFodder</h3>
+    <p><i>“If you can’t fly then run, if you can’t run then walk, if you can’t walk then crawl, but whatever you do you have to keep moving forward.”</i> </p>
+    <div class="social-links">
+      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; Copyright <strong><span>OtterFodder</span></strong>. All Rights Reserved
+    </div>
+
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+
+
+<script src="{{ url_for('static', filename='static/assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+<script src="{{ url_for('static', filename='static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='static/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='static/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='static/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='static/assets/vendor/waypoints/noframework.waypoints.js') }}  "></script>
+<script src="{{ url_for('static', filename='static/assets/vendor/php-email-form/validate.js') }}"></script>
+
+<!-- Template Main JS File -->
+<script src="{{ url_for('static', filename='static/assets/js/main.js') }}"></script>
+
+</body>

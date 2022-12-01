@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+        <title>OtterFodder</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+      
+
+        <!-- Favicons -->
+        <link href=" {{ url_for('static', filename='static/assets/img/favicon.png') }}" rel="icon">
+        <link href="{{ url_for('static', filename='static/assets/img/apple-touch-icon.png') }}  " rel="apple-touch-icon">
+      
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+      
+        <!-- Vendor CSS Files -->
+        <link href="{{ url_for('static', filename='static/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='static/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='static/assets/vendor/boxicons/css/boxicons.min.css') }} " rel="stylesheet">
+        <link href="{{ url_for('static', filename='static/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='static/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+      
+        <!-- Template Main CSS File -->
+        <link href="{{ url_for('static', filename='static/assets/css/profile.css') }}" rel="stylesheet">
+      
+        <!-- =======================================================
+        * Name: OtterFodder
+        * Author: Jose Cabrera, Kevin
+        * License: None
+        ======================================================== -->
+      </head>
+<body>
+  
+    
+  <!-- ======= Header ======= -->
+
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+
+    <nav id="navbar" class="navbar">
+      
+      <ul>
+        
+        <li><a class="nav-link scrollto" style="color: white" href="{{ url_for('logout') }}"><h3>Logout</h3></a></li>
+        <li><a class="nav-link scrollto" style="color: white" href="{{ url_for('shell_stack') }}"><h3> Dislike</h3></a></li>
+        <li><a class="nav-link scrollto" style="color: white" href="{{ url_for('shell_stack') }}"><h3>Like</h3></a></li>
+        
+      </ul>
+    </div>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  
+
+  </header><!-- End Header -->
+  <div class = "shell-img">
+    <!-- ======= MY Profile  Section ======= -->
+    <section id="shell" class="shell_stack">
+        <div class="container">
+  
+          <div class="section-title">
+            <span>Shell Stack </span>
+            <h2>Shell Stack </h2>
+          </div>
+  
+          
+<div class="row">
+  <div class="col-sm">
+    <div class="content ps-lg-6 d-flex flex-column justify-content-center"><img src="{{trial[6]}}" alt="Profile Picture "></div>
+  </div>
+  
+  <div class="col-lg-6">
+    <div  class="content ps-lg-6 d-flex flex-column justify-content-center">
+      <!-- <div class="h-auto d-inline-block" style="width: 800px; background-color: rgba(0,0,255,.1)" >    
+        <div class="w-auto p-3" style="background-color: #eee;">    -->
+          <div style="height: 850px; background-color: #eee;">
+            <div class="mh-100" style="width: 800px; height: 850px; background-color:#eee;">    
+              <div class = shell-box>
+              
+              <li> <strong>First Name:</strong> <span>{{trial[1]}}</span></li>
+              <li> <strong>Last Name :</strong> <span>{{trial[2]}}</span></li>
+              <li> <strong>Country:</strong> <span>{{trial[3]}}</span></li>
+              <li> <strong>State:</strong> <span>{{trial[4]}}</span></li>
+                <li> <strong>Gender:</strong> <span>{{trial[0]}}</span></li>
+                <li><strong>Age:</strong> <span>{{trial[5]}}</span></li>
+              
+                     
+            </div>
+          </div>
+
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+             
+              </div>
+  
+            </div>
+          </div>
+  
+  
+        </div>
+      </section><!-- End My Profile Section -->
+    </div>
+</body>
+
+</html>
+

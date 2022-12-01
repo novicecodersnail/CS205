@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link href="{{ url_for('static', filename='static/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='static/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+        <!-- Template Main CSS File -->
+        <link href="{{ url_for('static', filename='static/assets/css/forms.css') }}" rel="stylesheet">
+        <title>Deactivate Account </title>
+    </head>
+
+<body>
+    <div class="del1">
+        
+        <h1 class="del1-text">Deactivate Account </h1>
+
+        <form class="submission-form" method="POST" action="">
+            {{ form.hidden_tag() }}
+            {{ form.username }}
+            {{ form.password }}
+            {{ form.submit }}
+        </form>
+
+        
+
+    </div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Python Flask Upload and display image</title>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        
+        <h2>Select a file to upload</h2>
+
+    
+        <form method="post" nctype="multipart/form-data" >
+            {{ form.hidden_tag() }}
+            {% for error in form.photo.erors %}
+            <span style="color: red "> </span>
+            {% endfor %}
+            <div > 
+               
+                {{ form.photo(class="form-control")}}
+                {{ form.submit(class="btn btn-success")}}
+                
+            </div>
+        </form>
+        {% if file_url %}
+            <div >
+                <img src="{{ file_url }} " > 
+            </div> 
+        {% endif %}
+
+    </div>
+</div>
+</body>
+</html>
