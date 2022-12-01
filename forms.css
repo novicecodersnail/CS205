@@ -1,0 +1,153 @@
+ .log .submission-form {
+    justify-content: center;
+ 
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    text-align: center;
+    padding: 75px 50px 75px 100px;
+
+
+  }
+
+  .log .submission-form  input,
+  .log .submission-form  textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+    }
+
+  .log .submission-form  input {
+    padding: 10px 15px;
+  }
+  .log .submission-form  textarea {
+    padding: 12px 15px;
+  }
+  .log .login-text{
+
+    text-align:center;
+  }
+  .log .option-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .log {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/water_otter.jpg") top right;
+    background-size: cover;
+    position: relative;
+    
+  }
+
+
+
+  .reg .submission-form {
+    justify-content: center;
+ 
+    box-shadow: 0 0 30px white;
+    text-align: center;
+    padding: 75px 50px 75px 100px;
+
+
+  }
+
+  .reg .submission-form  input,
+  .reg .submission-form  textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+    }
+
+  .reg .submission-form  input {
+    padding: 10px 15px;
+  }
+  .reg .submission-form  textarea {
+    padding: 12px 15px;
+  }
+  .reg .register-text{
+
+    text-align:center;
+  }
+  .reg .option-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .reg {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/otter.jpg") top right;
+    background-size: cover;
+    position: relative;
+    
+  }
+ .log span {
+    position: absolute;
+    top: 30px;
+    color: black;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 0;
+  }
+  
+.log h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #3b434a;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .del1 .submission-form {
+    justify-content: center;
+ 
+    box-shadow: 0 0 30px white;
+    text-align: center;
+    padding: 75px 50px 75px 100px;
+
+
+  }
+
+  .del1 .submission-form  input,
+  .del1 .submission-form  textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+    }
+
+  .del1 .submission-form  input {
+    padding: 10px 15px;
+  }
+  .ddel1 .submission-form  textarea {
+    padding: 12px 15px;
+  }
+  .del1 .register-text{
+
+    text-align:center;
+  }
+  .del1 .option-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .del1 {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/cry.jpg") top right;
+    background-size: 50%;
+    position: relative;
+    
+  }
+  .del1 .del1-text{
+    text-align:center;
+  }
